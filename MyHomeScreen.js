@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button } from 'react-native';
-import { Ionicons, View } from '@expo/vector-icons';
+import { Button , View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { Header } from './Header';
 // export default class App extends React.Component {
 //   render() {
 //     return (
@@ -11,19 +12,8 @@ import { Ionicons, View } from '@expo/vector-icons';
 //   }
 // }
 export class MyHomeScreen extends React.Component {
-  static navigationOptions = {
-    headerTitle : (<Button
-        onPress={() => alert('This is a header!')}
-        title="Info"
-        color="#fff"
-      />),
-    headerRight: (
-        <Button
-          onPress={() => alert('This is a button!')}
-          title="Info"
-          color="#fff"
-        />
-      ),
+  static navigationOptions = {   
+  
     drawerLabel: 'Home',
     drawerIcon: ({ tintColor }) => (
       // <Image
@@ -34,10 +24,12 @@ export class MyHomeScreen extends React.Component {
   };
   render() {
     return (
-        
-        <Button style={{paddingTop:42}}
+        <View>
+        <Button style={{flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'center'}}
          onPress={() => this.props.navigation.navigate('Notifications')} title="Go to notifications" />
-        
+        </View>
         );
   }
 }
