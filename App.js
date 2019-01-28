@@ -40,16 +40,18 @@ const FooStackNavigator = createStackNavigator({
     screen: FooScreen, 
     navigationOptions: {
       title: 'Foo',
+      tabBarIcon : <Ionicons name="md-home" size={32} color="green" />,
       icon : <Ionicons name="md-home" size={32} color="green" />,
+      drawerIcon : <Ionicons name="md-home" size={32} color="green" />,
     }
   },
 });
 const BarStackNavigator = createStackNavigator({
-  Boo: { 
+  Bar: { 
     screen: BarScreen, 
     navigationOptions: {
       title: 'Bar',
-      icon: <Ionicons name="md-notifications" size={32} color="green" />
+      tabBarIcon: <Ionicons name="md-notifications" size={32} color="green" />
     }
   },
 });
@@ -57,9 +59,18 @@ const BarStackNavigator = createStackNavigator({
 const MyDrawerNavigator = createDrawerNavigator({
   FooStack: { 
     screen: FooStackNavigator,
+    label: 'Foo Stack',
     navigationOptions: {
       drawer: () => ({
         label: 'Foo',
+        tabBarIcon: ({ tintColor }) => (
+          // <Icon name="credit-card" size={22} color={tintColor} />
+          <Ionicons name="md-home" size={32} color="green" />
+        ),
+        headerLeft: ({ tintColor }) => (
+          // <Icon name="credit-card" size={22} color={tintColor} />
+          <Ionicons name="md-home" size={32} color="green" />
+        ),
         icon: ({ tintColor }) => (
           // <Icon name="credit-card" size={22} color={tintColor} />
           <Ionicons name="md-home" size={32} color="green" />
@@ -69,10 +80,11 @@ const MyDrawerNavigator = createDrawerNavigator({
   },
   BarStack: { 
     screen: BarStackNavigator,
+    label: 'Bar Stack',
     navigationOptions: {
       drawer: () => ({
         label: 'Bar',
-        icon: ({ tintColor }) => (
+        drawerIcon: ({ tintColor }) => (
           // <Icon name="tag" size={22} color={tintColor} />
           <Ionicons name="md-notifications" size={32} color="green" />
         ),
