@@ -1,7 +1,9 @@
 import React from "react";
-import { Button, View, Text } from "react-native";
+import { Button, View, Text , TouchableOpacity, } from "react-native";
+import {createDrawerNavigator, createAppContainer, createStackNavigator} from 'react-navigation';
+import { Ionicons } from '@expo/vector-icons';
 
-export class TimeLinePage extends React.Component {
+class TimeLinePage extends React.Component {
   render() {
     return (
       <View
@@ -17,3 +19,15 @@ export class TimeLinePage extends React.Component {
     );
   }
 }
+
+export default TimelineStack = createStackNavigator({
+
+  TimeLinePage: {
+    screen: TimeLinePage,
+    navigationOptions: ({ navigation }) => ({
+      headerTitle: "Time line list",
+      headerLeft: <View><TouchableOpacity onPress={() => { navigation.toggleDrawer() }}><Ionicons name='md-menu' size={35} /></TouchableOpacity></View>
+    })
+  },
+
+});

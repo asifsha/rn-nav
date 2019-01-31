@@ -10,7 +10,7 @@ import { Ionicons } from '@expo/vector-icons';
 import DrawerContainer from './DrawerContainer';
 
 import { HomePage } from './HomePage';
-import { TimeLinePage } from './TimeLinePage';
+import TimeLinePage  from './TimeLinePage';
 import { CalendarPage } from './CalendarPage';
 import { ListPage } from './ListPage';
 
@@ -28,7 +28,7 @@ const HomeStack = createStackNavigator({
 
 const DrawerStack = createDrawerNavigator({
   HomePage: { screen: HomeStack },
-  TimeLinePage: { screen: TimeLinePage },
+  TimeLinePage: { screen: TimeLinePage},
   CalendarPage: { screen: CalendarPage },
   ListPage: { screen: ListPage } 
 },

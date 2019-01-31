@@ -67,19 +67,19 @@ export default class DrawerContainer extends React.Component {
 
             <View style={styles.navSectionStyle}>
 
-              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('MyPage1')}>
+              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('TimeLinePage')}>
                 <Ionicons name='md-list' size={iconSize} style={styles.drawerIcon} />
-                <Text style={styles.navItemStyle} >Page 1</Text>
+                <Text style={styles.navItemStyle} >Time Line</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('MyPage2')}>
+              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('ListPage')}>
                 <Ionicons name='md-clipboard' size={iconSize} style={styles.drawerIcon} />
-                <Text style={styles.navItemStyle}>Page 2</Text>
+                <Text style={styles.navItemStyle}>List</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('MyPage3')}>
+              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('CalendarPage')}>
                 <Ionicons name='md-clipboard' size={iconSize} style={styles.drawerIcon} />
-                <Text style={styles.navItemStyle}>Page 3</Text>
+                <Text style={styles.navItemStyle}>Calendar</Text>
               </TouchableOpacity>
 
             </View>
