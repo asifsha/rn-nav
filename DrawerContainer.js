@@ -78,7 +78,7 @@ export default class DrawerContainer extends React.Component {
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('CalendarPage')}>
-                <Ionicons name='md-clipboard' size={iconSize} style={styles.drawerIcon} />
+                <Ionicons name='md-calendar' size={iconSize} style={styles.drawerIcon} />
                 <Text style={styles.navItemStyle}>Calendar</Text>
               </TouchableOpacity>
 

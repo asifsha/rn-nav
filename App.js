@@ -11,7 +11,7 @@ import DrawerContainer from './DrawerContainer';
 
 import { HomePage } from './HomePage';
 import TimeLinePage  from './TimeLinePage';
-import { CalendarPage } from './CalendarPage';
+import CalendarPage from './CalendarPage';
 import { ListPage } from './ListPage';
 
 const HomeStack = createStackNavigator({
