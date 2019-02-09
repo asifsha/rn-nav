@@ -59,7 +59,20 @@ class CalendarPage extends React.Component {
             }}
           // Date marking style [simple/period/multi-dot/custom]. Default = 'simple'
           markingType={'period'}
-          theme={{dayTextColor: '#2d4150',}}
+          theme={{
+            dayTextColor: '#FFDAB9',
+            'stylesheet.calendar.header': {
+              week: {
+                marginTop: 5,
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                color:'red',
+                
+              }
+            },
+            dayTextColor: '#FF7F50',
+            calendarBackground: '#333248',
+        }}
         />
       </View>
     );
