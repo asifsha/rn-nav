@@ -72,9 +72,9 @@ export default class DrawerContainer extends React.Component {
                 <Text style={styles.navItemStyle} >Time Line</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('ListPage')}>
-                <Ionicons name='md-clipboard' size={iconSize} style={styles.drawerIcon} />
-                <Text style={styles.navItemStyle}>List</Text>
+              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('VideoPage')}>
+                <Ionicons name='md-videocam' size={iconSize} style={styles.drawerIcon} />
+                <Text style={styles.navItemStyle}>Video</Text>
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('CalendarPage')}>
