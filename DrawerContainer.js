@@ -93,9 +93,9 @@ export default class DrawerContainer extends React.Component {
                 <Text style={styles.navItemStyle} >Graph</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('MyPage5')}>
-                <Ionicons name='logo-apple' size={iconSize} style={styles.drawerIcon} />
-                <Text style={styles.navItemStyle} >Page 5</Text>
+              <TouchableOpacity style={styles.drawerMenu} onPress={this.navigateToScreen('MapPage')}>
+                <Ionicons name='md-map' size={iconSize} style={styles.drawerIcon} />
+                <Text style={styles.navItemStyle} >Map</Text>
               </TouchableOpacity>
 
             </View>
