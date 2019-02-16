@@ -19,7 +19,7 @@ class VideoPage extends React.Component {
           javaScriptEnabled={true}
           source={{
             uri:
-              "https://www.youtube.com/embed/fAoMjiFPKUw?rel=0&autoplay=0&showinfo=0&controls=0"
+              ""
           }}
         />
        

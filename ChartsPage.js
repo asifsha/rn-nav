@@ -6,7 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 import { LineChart, ProgressChart } from "react-native-chart-kit";
 
-class GraphPage extends React.Component {
+class ChartsPage extends React.Component {
   render() {
     return (
       <View
@@ -71,9 +71,9 @@ class GraphPage extends React.Component {
   }
 }
 
-export default (GraphStack = createStackNavigator({
-  GraphPage: {
-    screen: GraphPage,
+export default (ChartsStack = createStackNavigator({
+  ChartsPage: {
+    screen: ChartsPage,
     navigationOptions: ({ navigation }) => ({
       headerTitle: "Graph",
       headerLeft: (

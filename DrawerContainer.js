@@ -90,14 +90,14 @@ export default class DrawerContainer extends React.Component {
 
               <TouchableOpacity
                 style={styles.drawerMenu}
-                onPress={this.navigateToScreen("VideoPage")}
+                onPress={this.navigateToScreen("MapPage")}
               >
                 <Ionicons
-                  name="md-videocam"
+                  name="md-map"
                   size={iconSize}
                   style={styles.drawerIcon}
                 />
-                <Text style={styles.navItemStyle}>Video</Text>
+                <Text style={styles.navItemStyle}>Map</Text>
               </TouchableOpacity>
 
               <TouchableOpacity
@@ -118,26 +118,26 @@ export default class DrawerContainer extends React.Component {
             <View style={styles.navSectionStyle}>
               <TouchableOpacity
                 style={styles.drawerMenu}
-                onPress={this.navigateToScreen("GraphPage")}
+                onPress={this.navigateToScreen("ChartsPage")}
               >
                 <Ionicons
                   name="md-business"
                   size={iconSize}
                   style={styles.drawerIcon}
                 />
-                <Text style={styles.navItemStyle}>Graph</Text>
+                <Text style={styles.navItemStyle}>Charts</Text>
               </TouchableOpacity>
 
               <TouchableOpacity
                 style={styles.drawerMenu}
-                onPress={this.navigateToScreen("MapPage")}
+                onPress={this.navigateToScreen("VideoPage")}
               >
                 <Ionicons
-                  name="md-map"
+                  name="md-videocam"
                   size={iconSize}
                   style={styles.drawerIcon}
                 />
-                <Text style={styles.navItemStyle}>Map</Text>
+                <Text style={styles.navItemStyle}>Video</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -148,7 +148,7 @@ export default class DrawerContainer extends React.Component {
             style={styles.drawerMenu}            
           >
             <Ionicons
-              name="md-information"
+              name="md-information-circle"
               size={iconSize}
               style={styles.drawerIcon}
             />
