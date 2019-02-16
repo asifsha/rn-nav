@@ -4,13 +4,7 @@ import { createStackNavigator } from "react-navigation";
 
 import { Ionicons } from "@expo/vector-icons";
 
-import {
-  LineChart,
-  BarChart,
-  PieChart,
-  ProgressChart,
-  ContributionGraph
-} from "react-native-chart-kit";
+import { LineChart, ProgressChart } from "react-native-chart-kit";
 
 class GraphPage extends React.Component {
   render() {
@@ -41,39 +35,36 @@ class GraphPage extends React.Component {
           width={Dimensions.get("window").width - 10} // from react-native
           height={320}
           chartConfig={{
-            backgroundColor: '#e26a00',
-            backgroundGradientFrom: '#fb8c00',
-            backgroundGradientTo: '#ffa726',
+            backgroundColor: "#e26a00",
+            backgroundGradientFrom: "#fb8c00",
+            backgroundGradientTo: "#ffa726",
             decimalPlaces: 2, // optional, defaults to 2dp
             color: (opacity = 1) => `rgba(33, 29, 27, ${opacity})`,
             style: {
               borderRadius: 16
             }
           }}
-          
           bezier
           style={{
             marginVertical: 8,
             borderRadius: 16
           }}
         />
-        
 
         <ProgressChart
           data={[0.4, 0.6, 0.8]}
           width={Dimensions.get("window").width - 10}
           height={220}
           chartConfig={{
-            backgroundColor: '#e26a00',
-            backgroundGradientFrom: '#fb8c00',
-            backgroundGradientTo: '#ffa726',
+            backgroundColor: "#e26a00",
+            backgroundGradientFrom: "#fb8c00",
+            backgroundGradientTo: "#ffa726",
             decimalPlaces: 2, // optional, defaults to 2dp
             color: (opacity = 1) => `rgba(33, 29, 27, ${opacity})`,
             style: {
               borderRadius: 16
             }
           }}
-         
         />
       </View>
     );

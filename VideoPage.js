@@ -1,11 +1,8 @@
 import React from "react";
-import { TouchableOpacity, View, StyleSheet, WebView } from "react-native";
+import { TouchableOpacity, View, WebView } from "react-native";
 import { createStackNavigator } from "react-navigation";
 import { Ionicons } from "@expo/vector-icons";
 
-//import Video from 'react-native-video';
-
-import { Video } from "expo";
 
 class VideoPage extends React.Component {
   render() {

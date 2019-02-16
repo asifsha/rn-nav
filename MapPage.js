@@ -12,16 +12,9 @@ class MapPage extends React.Component {
     }
   
     render() {
-        //const { navigate } = this.props.navigation;
-        // const latitude = navigate.getParam('latitude', 37.78825);
-        // const longitude = navigate.getParam('longitude', -122.4324);
         const  latitude= 24.858392;
         const longitude =67.001037;
-
-        //const latitude = parseFloat(this.props.navigation.state.params.venue.latitude, 10);
-        //const longitude = parseFloat(this.props.navigation.state.params.venue.longitude, 10);       
-
-
+      
         return (
 
             <MapView style={{
@@ -67,16 +60,5 @@ class MapPage extends React.Component {
     }
   }));
   
-//   const styles = StyleSheet.create({
-//     container: {
-//       flex: 1,
-//       padding: 20,
-//       paddingTop: 65,
-//       backgroundColor: "white"
-//     },
-//     list: {
-//       flex: 1,
-//       marginTop: 20
-//     }
-//   });
+
   

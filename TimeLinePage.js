@@ -1,10 +1,6 @@
 import React from "react";
-import { Button, View, StyleSheet, TouchableOpacity } from "react-native";
-import {
-  createDrawerNavigator,
-  createAppContainer,
-  createStackNavigator
-} from "react-navigation";
+import { View, StyleSheet, TouchableOpacity } from "react-native";
+import { createStackNavigator } from "react-navigation";
 import { Ionicons } from "@expo/vector-icons";
 import Timeline from "react-native-timeline-listview";
 
