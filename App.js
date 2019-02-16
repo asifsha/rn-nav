@@ -13,6 +13,7 @@ import { HomePage } from './HomePage';
 import TimeLinePage  from './TimeLinePage';
 import CalendarPage from './CalendarPage';
 import VideoPage from './VideoPage';
+import GraphPage from './GraphPage';
 
 const HomeStack = createStackNavigator({
 
@@ -30,7 +31,8 @@ const DrawerStack = createDrawerNavigator({
   HomePage: { screen: HomeStack },
   TimeLinePage: { screen: TimeLinePage},
   CalendarPage: { screen: CalendarPage },
-  VideoPage: { screen: VideoPage } 
+  VideoPage: { screen: VideoPage },
+  GraphPage: { screen : GraphPage} 
 },
   {
     gesturesEnabled: false,
