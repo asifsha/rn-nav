@@ -3,7 +3,6 @@ import { TouchableOpacity, View, WebView } from "react-native";
 import { createStackNavigator } from "react-navigation";
 import { Ionicons } from "@expo/vector-icons";
 
-
 class VideoPage extends React.Component {
   render() {
     return (
@@ -15,20 +14,20 @@ class VideoPage extends React.Component {
         }}
       >
         <WebView
-          style={{ flex: 1, padding: 20 }}
+          style={{ flex: 1,  }}
           javaScriptEnabled={true}
           source={{
-            uri:
-              ""
-          }}
+            
+	            uri:
+	              "https://www.youtube.com/embed/fAoMjiFPKUw?rel=0&autoplay=0&showinfo=0&controls=0"
+	              
+	          }}
+          
         />
-       
       </View>
     );
   }
 }
-
-
 
 export default (VideoStack = createStackNavigator({
   VideoPage: {
