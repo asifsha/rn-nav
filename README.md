@@ -11,3 +11,6 @@ React Native App with Custom Drawer, Calendar, Video, Charts, Timeline and Map.
 - [Map](https://docs.expo.io/versions/latest/sdk/map-view)
 - [Video](https://facebook.github.io/react-native/docs/webview)
 - [Drawer](https://github.com/kakulgupta/CustomDrawer) 
+
+## How to Use?
+Clone this repo, cd rn-nav, npm install, expo start
